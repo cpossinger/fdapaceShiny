@@ -1,0 +1,13 @@
+name: fdapaceshiny
+title:
+username:
+account: cposs2000
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 4311743
+bundleId: 4990411
+url: https://cposs2000.shinyapps.io/fdapaceshiny/
+when: 1630526856.93515
+lastSyncTime: 1630526856.93521
+asMultiple: FALSE
+asStatic: FALSE

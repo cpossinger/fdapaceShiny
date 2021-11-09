@@ -1,0 +1,36 @@
+Package: fdapaceShiny
+Title: A Shiny App for the 'fdapace' Package
+Version: 1.0.4
+Authors@R: person('Camden', 'Possinger', email = 'cpossinger@ucdavis.edu', role = c('cre', 'aut'))
+Description: Shiny app for the 'fdapace' package.
+License: MIT + file LICENSE
+Imports: 
+    config (>= 0.3.1),
+    dplyr,
+    DT,
+    fdapace,
+    ggplot2,
+    golem (>= 0.3.1),
+    htmltools,
+    magrittr,
+    shiny (>= 1.6.0),
+    plotly,
+    purrr,
+    reshape2,
+    stringr,
+    tidyr,
+    bs4Dash,
+    shinyWidgets,
+    shinyjs
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Suggests: 
+    knitr,
+    covr,
+    testthat (>= 3.0.0),
+    rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/cpossinger/fdapaceShiny
+BugReports: https://github.com/cpossinger/fdapaceShiny/issues

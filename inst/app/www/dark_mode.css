@@ -1,0 +1,21 @@
+ .item-multiple-dark{
+  background:  #6c757d!important;
+  color: #f8f9fa!important;
+} 
+
+
+
+.item-multiple-light{
+  background: #efefef!important;
+  color: #333333!important;
+}
+
+
+
+.odd-dark{
+  background-color: #6c757d!important;
+}
+
+.odd-light{
+  background-color: #f9f9f9!important;
+}
