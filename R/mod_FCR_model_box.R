@@ -72,19 +72,16 @@ tags$div(HTML("<script type='text/x-mathjax-config' >
 #' @importFrom purrr map
 #' @import ggplot2
 #' @importFrom magrittr extract2 
-#' @importFrom utils globalVariables
 #' @noRd 
 #' 
 #' 
 
-#globalVariables(c("HTML","ID","value","variable","x","y")) 
 value <- NULL
 mod_FCR_model_box_server <- function(id, raw_data, id_col, time_col,dark_mode){
   moduleServer( id, function(input, output, session){
     ns <- session$ns
     
     
-  utils::globalVariables(c("value","HTML"))  
     
     # Dark Mode CSS ####
     # Change multiple selectize css for dark mode switch  

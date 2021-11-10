@@ -1,6 +1,6 @@
 Package: fdapaceShiny
 Title: A Shiny App for the 'fdapace' Package
-Version: 1.0.4
+Version: 1.0.5
 Authors@R: person('Camden', 'Possinger', email = 'cpossinger@ucdavis.edu', role = c('cre', 'aut'))
 Description: Shiny app for the 'fdapace' package.
 License: MIT + file LICENSE

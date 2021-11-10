@@ -6,11 +6,9 @@
 #' @importFrom graphics par
 #' @importFrom stats fitted predict time 
 #' @importFrom shiny observeEvent reactive observe insertUI 
-#' @importFrom utils globalVariables
 #' 
 #' @noRd
 #' 
-#globalVariables(c("HTML","ID","value","variable","x","y"), add = FALSE) 
 
 app_server <- function( input, output, session ) {
   
@@ -21,7 +19,6 @@ app_server <- function( input, output, session ) {
   #   mod_FPCA_server("FPCA_ui_1", golem::get_golem_options("fpca_obj"))
   # } 
 
-  #globalVariables(c("HTML","ID","value","variable","x","y"))
   
   
   init_user_select <- mod_global_options_server("global_options_ui_1")
@@ -36,7 +33,7 @@ app_server <- function( input, output, session ) {
   
   
   
-  observeEvent(input$add_fpca_model, {
+  observeEvent(input$add_fpca_model,{ 
     if(is.null(init_user_select$raw_data()) == FALSE){
       insertUI(
         selector = '#add_fpca_model',
