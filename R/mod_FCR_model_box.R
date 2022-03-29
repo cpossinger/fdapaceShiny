@@ -279,7 +279,8 @@ return(vars)
 full_time_vec <- reactive({
 time_max <- raw_data() %>% extract2(time_col()) %>% unique %>% max 
 time_min <- raw_data() %>% extract2(time_col()) %>% unique %>% min 
-full_time_vec <- time_min:time_max
+#full_time_vec <- time_min:time_max
+full_time_vec <- seq(time_min, time_max, length.out = 51)
 return(full_time_vec)
 })
 
