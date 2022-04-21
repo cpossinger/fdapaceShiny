@@ -317,19 +317,9 @@ mod_FPCA_model_box_server <- function(id, raw_data, id_col, time_col, dark_mode)
     
     # Get ID Index ####
     id_index <- reactive({
-      # When Subject ID is a string 
-      if(input$subj_select %>% as.integer %>% is.na){
-        
+      
         # Figure out which index integer corresponds to the ID string
         id_index <- which(fpca_list()$Lid %>% unlist %in% input$subj_select) 
-        
-      }
-      
-      # When ID is an integer
-      else{
-        # Convert string to integer
-        id_index <- input$subj_select %>% as.integer
-      }
     }) 
     
     subj_fitted_obj <- reactive({
